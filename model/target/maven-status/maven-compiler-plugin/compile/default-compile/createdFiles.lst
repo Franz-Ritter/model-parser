@@ -1,0 +1,9 @@
+model\parser\test\model\solarpanel\AbstractSolarPanel.class
+model\parser\test\model\battery\AbstractBattery.class
+model\parser\test\model\solarpanel\ISolarPanel.class
+model\parser\test\model\battery\impl\Battery_B.class
+model\parser\test\model\IModel.class
+model\parser\test\model\battery\IBattery.class
+model\parser\test\model\Complex.class
+model\parser\test\model\battery\impl\Battery_A.class
+model\parser\test\model\solarpanel\impl\SolarPanel_A.class
