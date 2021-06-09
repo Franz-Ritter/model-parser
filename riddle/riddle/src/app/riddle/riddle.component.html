@@ -1,0 +1,44 @@
+<div [ngStyle]="{'margin-left': '10px'}">
+    <h1>Spur Nummer {{id}}</h1>
+    <div class="p-mb-5">
+        <span class="p-float-label p-mb-2">
+            <input id="float-input" type="text" pInputText [(ngModel)]="code">
+            <label class="p-ml-2" for="float-input">Code</label>
+        </span>
+
+        <div>
+            <p-button label="Freischalten" (click)="isCodeGiven()"></p-button>
+        </div>
+    </div>
+    <div *ngIf="showRiddle">
+        <p-panel header="Aufgabe">
+            {{selectedRiddle.task}}
+        </p-panel>
+        <div [ngStyle]="{'margin-top': '15px', 'margin-bottom': '15px'}">
+            <p-panel header="Rätsel">
+                {{selectedRiddle.riddle}}
+            </p-panel>
+        </div>
+        <div [ngStyle]="{'margin-bottom': '40px'}">
+            <p-accordion>
+                <p-accordionTab header="Hinweis">
+                    Caeser
+                </p-accordionTab>
+            </p-accordion>
+        </div>
+
+        <div>
+            <span class="p-float-label p-mb-2">
+                <textarea [rows]="5" [cols]="60" pInputTextarea></textarea>
+            </span>
+            <div class>
+                <p-button label="Lösen"></p-button>
+            </div>
+        </div>
+        <div [ngStyle]="{'margin-top': '15px', 'margin-bottom': '15px'}">
+            <p-card header="Lösung">
+                {{selectedRiddle.solution}}
+            </p-card>
+        </div>
+    </div>
+</div>

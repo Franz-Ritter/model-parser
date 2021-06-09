@@ -1,0 +1,2 @@
+clientId: 414932651922-mfrkpk7r5vlobvnca7eeu8epc7m2pqir.apps.googleusercontent.com
+secret: _DUARhFB6AT4Poyc-ON6gLWh
